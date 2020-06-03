@@ -1,0 +1,247 @@
+body {
+    margin: 0vw;
+    padding: 0vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.kontener {
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr 3fr 1.5fr 2.5fr 0.4fr;
+    grid-template-areas:
+        "header header header header header header header"
+        ". . swiece swiece swiece . ."
+        ". swiece1 swiece1 swiece1 swiece1 . ."
+        ". . swiece2 swiece2 swiece2 . ."
+        ". aside aside aside aside aside ."
+        ". aside aside aside aside aside ."
+        ". . zakupy zakupy zakupy zakupy ."
+        "footer footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 1vw;
+    background-color: #ffebef;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    padding-left: 0vw;
+}
+
+header section h1 {
+    margin-left: 1vw;
+    padding-left: 1vw;
+    font-family: 'Kalam', cursive;
+    color: #154b00;
+}
+
+.form-inline {
+    margin-left: 46vw;
+    padding-left: 6vw;
+    padding-right: 2vw;
+}
+
+.form-control {
+    padding-right: 7.5vw;
+    padding-left: 1vw;
+}
+
+.kosz {
+    color: #154b00;
+    font-family: 'Kalam', cursive;
+}
+
+.kosz:hover {
+
+    color: #e66482;
+}
+
+header nav {
+    padding-bottom: 1vw;
+    padding-top: 2vw;
+    margin-left: 0vw;
+    padding-left: 0vw;
+    background-color: #ffb8c9;
+}
+
+header nav ul {
+    display: flex;
+    margin-left: 2vw;
+    padding-left: 0vw;
+}
+
+li {
+    list-style: none;
+    padding-right: 5.5vw;
+    padding-left: 5.5vw;
+    border-right: 0.07vw solid black;
+    font-family: 'Kalam', cursive;
+    transition-duration: 0.5s;
+    color: #154b00;
+
+}
+
+.pier {
+    list-style: none;
+    padding-right: 5.5vw;
+    border-right: 0.07vw solid black;
+    border-left: 0.07vw solid black;
+    color: #154b00;
+
+}
+
+.pier:hover {
+    text-decoration: none;
+    
+}
+
+.elmenu {
+    text-decoration: none;
+    color: #154b00;
+    font-size: 1.5vw;
+}
+
+.elmenu:hover {
+    text-decoration: none;
+    color: #e66482;
+}
+
+main{
+    display: grid;
+    grid-area:aside;
+    grid-template-columns: 0.3fr 2fr 0.3fr 2fr 0.3fr 2fr 0.3fr 2fr 0.3fr;
+    grid-template-areas: ". rek1 . rek2 . rek3 . rek4 .";
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+main:hover{
+    text-decoration: none;
+}
+
+.koszyki{
+    margin-top: 2.5vw;
+    margin-left:14vw;
+    grid-area:swiece;
+    color: #154b00;
+    font-size: 3vw;
+    font-family: 'Kalam', cursive;
+}
+
+.pyt{
+    margin-top: 1vw;
+    margin-left:22vw;
+    grid-area:swiece1;
+    color: #154b00;
+    font-size: 2vw;
+    font-family: 'Kalam', cursive;
+}
+
+.odp{
+    margin-top: 1.5vw;
+    margin-left:12vw;
+    grid-area:swiece2;
+    color: #154b00;
+    font-size: 2vw;
+    font-family: 'Kalam', cursive;
+}
+
+.formularz{
+    display: grid;
+    margin-left: 22vw ;
+}
+
+.formtext1{
+    font-size: 1.75vw;
+    font-family: 'Kalam', cursive;
+    color: #154b00;
+    text-align: center;
+    
+}
+
+
+.formtext{
+    font-size: 1.75vw;
+    font-family: 'Kalam', cursive;
+    color: #154b00;
+    text-align: center;
+    padding-top:1.5vw;
+}
+
+.kup{
+    margin-top:1vw;
+    margin-left: 34vw;
+    font-size: 1.7vw;
+    color: #aa3d56;
+    background-color: #ffb8c9;
+    border: solid 7px;
+    border-color: #ffb8c9;
+    border-radius: 7px;
+    transition-duration: 0.3s;
+    width:40%;
+}
+.kup:hover{
+    color: #ffb8c9;
+    background-color:#aa3d56;
+    border-color: #aa3d56;
+}
+
+a:hover{
+    text-decoration: none;
+    
+}
+
+.tez{
+    width:100%;
+    
+    
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #f17693;
+    padding: 2vw 3vw 1vw 4vw;
+}
+
+footer > h4 {
+    color: #154b00;
+    padding-right: 30vw;
+    padding-left: 32vw;
+    padding-top: 1vw;
+    font-family: 'Kalam', cursive;
+    font-size: 1.9vw;
+
+}
+
+.sociale {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.in {
+    padding-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+.in a img {
+
+    height: 30px;
+    margin-top: 10px;
+}
+
+.fb {}
+
+.fb a img {
+
+    height: 45px;
+    margin-top: 3px;
+}

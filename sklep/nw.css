@@ -1,0 +1,273 @@
+body {
+    margin: 0vw;
+    padding: 0vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.kontener {
+    display: grid;
+    grid-template-columns: 1fr 4fr 10fr 3fr 1.5fr 2.5fr 0.4fr;
+    grid-template-areas:
+        "header header header header header header header"
+        ". . swiece swiece swiece . ."
+        ". aside aside aside aside aside ."
+        ". aside aside aside aside aside ."
+        "footer footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 1vw;
+    background-color: #ffebef;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    padding-left: 0vw;
+}
+
+header section h1 {
+    margin-left: 1vw;
+    padding-left: 1vw;
+    font-family: 'Kalam', cursive;
+    color: #154b00;
+}
+
+.form-inline {
+    margin-left: 46vw;
+    padding-left: 6vw;
+    padding-right: 2vw;
+}
+
+.form-control {
+    padding-right: 7.5vw;
+    padding-left: 1vw;
+}
+
+.kosz {
+    color: #154b00;
+    font-family: 'Kalam', cursive;
+}
+
+.kosz:hover {
+
+    color: #e66482;
+}
+
+header nav {
+    padding-bottom: 1vw;
+    padding-top: 2vw;
+    margin-left: 0vw;
+    padding-left: 0vw;
+    background-color: #ffb8c9;
+}
+
+header nav ul {
+    display: flex;
+    margin-left: 2vw;
+    padding-left: 0vw;
+}
+
+li {
+    list-style: none;
+    padding-right: 5.5vw;
+    padding-left: 5.5vw;
+    border-right: 0.07vw solid black;
+    font-family: 'Kalam', cursive;
+    transition-duration: 0.5s;
+    color: #154b00;
+
+}
+
+.pier {
+    list-style: none;
+    padding-right: 5.5vw;
+    border-right: 0.07vw solid black;
+    border-left: 0.07vw solid black;
+    color: #154b00;
+
+}
+
+.pier:hover {
+    text-decoration: none;
+    
+}
+
+.elmenu {
+    text-decoration: none;
+    color: #154b00;
+    font-size: 1.5vw;
+}
+
+.elmenu:hover {
+    text-decoration: none;
+    color: #e66482;
+}
+
+main{
+    display: grid;
+    grid-area:aside;
+    grid-template-columns: 0.3fr 2fr 0.3fr 2fr 0.3fr 2fr 0.3fr 2fr 0.3fr;
+    grid-template-areas: ". rek1 . rek2 . rek3 . rek4 ." ". rek5 . rek6 . rek7 . rek8 ." ". rek9 . rek10 . rek11 . rek12 ." ;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+main:hover{
+    text-decoration: none;
+}
+
+.swiece{
+    margin-top: 2.5vw;
+    margin-bottom: 1.5vw;
+    margin-left:16.5vw;
+    grid-area:swiece;
+    color: #154b00;
+    font-size: 3vw;
+    font-family: 'Kalam', cursive;
+}
+
+.card1 {
+    margin-top: 2vw;
+    grid-area:rek1;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+}
+
+.card2 {
+    margin-top: 2vw;
+    grid-area:rek2;
+    box-shadow: 0 4px 8px 0 #8f9c89;   
+}
+
+.card3 {
+    margin-top: 2vw;
+    grid-area:rek3;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+
+}
+
+.card4 {
+    margin-top: 2vw;
+    grid-area:rek4;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+}
+
+.card5 {
+    margin-top: 2vw;
+    grid-area:rek5;
+    box-shadow: 0 4px 8px 0 #8f9c89;   
+}
+
+.card6 {
+    margin-top: 2vw;
+    grid-area:rek6;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+
+}
+
+.card7 {
+    margin-top: 2vw;
+    grid-area:rek7;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+}
+
+.card8 {
+    margin-top: 2vw;
+    grid-area:rek8;
+    box-shadow: 0 4px 8px 0 #8f9c89;   
+}
+
+.card9 {
+    margin-top: 2vw;
+    grid-area:rek9;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+
+}
+.card10 {
+    margin-top: 2vw;
+    grid-area:rek10;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+}
+
+.card11 {
+    margin-top: 2vw;
+    grid-area:rek11;
+    box-shadow: 0 4px 8px 0 #8f9c89;   
+}
+
+.card12 {
+    margin-top: 2vw;
+    grid-area:rek12;
+    box-shadow: 0 4px 8px 0 #8f9c89;
+
+}
+.cardopis{
+    color: #154b00;
+    text-align: center;
+    padding: 0.7vw;
+    font-family: 'Kalam', cursive;
+    margin-top: 0.7vw;
+}
+
+.cardopis:hover{
+    color: #e66482;
+}
+
+a:hover{
+    text-decoration: none;
+    
+}
+
+.tez{
+    width:100%;
+    
+    
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #ffb8c9;
+    padding: 2vw 3vw 1vw 4vw;
+}
+
+footer > h4 {
+    color: #154b00;
+    padding-right: 30vw;
+    padding-left: 32vw;
+    padding-top: 1vw;
+    font-family: 'Kalam', cursive;
+    font-size: 1.9vw;
+
+}
+
+.sociale {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.in {
+    padding-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+.in a img {
+
+    height: 30px;
+    margin-top: 10px;
+}
+
+.fb {}
+
+.fb a img {
+
+    height: 45px;
+    margin-top: 3px;
+}
